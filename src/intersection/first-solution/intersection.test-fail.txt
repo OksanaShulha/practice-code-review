@@ -1,11 +1,14 @@
-Tue May 18 2021, 9:11:44 AM
+Wed May 19 2021, 7:49:37 AM
 
 Intersect the elements that are equal and return them in a new array
   testing default parameters
-    √ PASS: Passing an object literal
-    √ PASS: Passing string primitive type
-    √ PASS: Without arguments
-    √ PASS: Add only one parameter
+    √ PASS: an object literal
+    √ PASS: string primitive type
+    ✖ FAIL: Without arguments
+      Must pas two arrays to intercept
+    ✖ FAIL: Add only one parameter
+      Must pas two arrays to intercept
+  
   passing only numbers
     √ PASS: both arrays with the same length
     √ PASS: The second argument with less elements
@@ -15,4 +18,6 @@ Intersect the elements that are equal and return them in a new array
     √ PASS: null and undefined
     √ PASS: strings
     √ PASS: all primitive
+  side effects
+    √ PASS: does not modify the original array
 

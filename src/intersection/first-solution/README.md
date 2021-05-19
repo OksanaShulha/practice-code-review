@@ -23,13 +23,13 @@ Creates an array of values that are in both the first and the second arrays.
 
 ## Strategy
 
-I chose to used built-in array and object methods to solve this challenge, because once you know them they are easy to read and save a lot of lines and time.
+Use a built-in array and object methods to solve this challenge, because once you know them they are easy to read and save a lot of lines and time.
 
 ---
 
 ## Implementation
 
-I use an `if` and `else` statement:
+Is used an `if` and `else` statement:
 
 1. The `if` statement reflects that if the argument is non an array throws an error.
 2. The `else` if is an array, I will follow the next steps:
@@ -72,9 +72,10 @@ console.log(arrayIntersection(Object.values(group1), Object.values(group2))); //
 
 ## Inspiration
 
-* Behavior strategy implementation module, from [HYF Belgium](https://hackyourfuture.be/), is good guide that help us to expands the uses of code.
+- Behavior strategy implementation module, from [HYF Belgium](https://hackyourfuture.be/), is good guide that help us to expands the uses of code.
 
-* [JavaScript: The Definitive Guide, 7th Edition](https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/)
+- [JavaScript: The Definitive Guide, 7th Edition](https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/)
+
 <!--
   was there any code, blog post, video, ... that inspired your solution?
   there's nothing wrong with adapting other people's code, just give them credit!
