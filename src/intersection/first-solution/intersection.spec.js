@@ -12,7 +12,9 @@ describe('Intersect the elements that are equal and return them in a new array',
       expect(() => arrayIntersection()).toThrow('Must pas two arrays to intercept the values');
     });
     it('Add only one parameter Throw an Error', () => {
-      expect(() => arrayIntersection([1, 2])).toThrow('Must pas two arrays to intercept the values');
+      expect(() => arrayIntersection([1, 2])).toThrow(
+        'Must pas two arrays to intercept the values'
+      );
     });
   });
   describe('With numbers', () => {

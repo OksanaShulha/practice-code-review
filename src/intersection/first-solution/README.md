@@ -8,14 +8,14 @@
 
 Creates an array of values that are in both the first and the second arrays.
 
-**Returns**: <code>Array</code> - Returns the new array of filtered values.
+**Returns**: <code>Array</code> - Returns the new array with only intersected values.
 
-| Param    | Type               | Default         | Description            |
-| -------- | ------------------ | --------------- | ---------------------- |
-| [array]  | <code>Array</code> | <code>[]</code> | The array to inspect.  |
-| [values] | <code>Array</code> | <code>[]</code> | The values to exclude. |
+| Param       | Type               | Default         | Description                                      |
+| ----------- | ------------------ | --------------- | ------------------------------------------------ |
+| [firstArr]  | <code>Array</code> | <code>[]</code> | First array to be compared for repeated values.  |
+| [secondArr] | <code>Array</code> | <code>[]</code> | Second array to be compared for repeated values. |
 
-> Docs generated: Tue May 18 2021, 11:09:46 AM
+> Docs generated: Wed May 19 2021, 8:36:52 AM
 
 <!-- END DOCS -->
 
