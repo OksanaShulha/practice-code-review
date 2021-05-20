@@ -1,0 +1,12 @@
+Thu May 20 2021, 12:17:16 PM
+
+Splits an object into multiple objects
+  √ PASS: expect an empty array if no arguments is passed
+  √ PASS: expect empty array if type of argument is passed object
+  √ PASS: expect empty array if argument is passed string
+  √ PASS: expect empty array if argument is passed boolean value
+  √ PASS: expect empty array if argument is array
+  √ PASS: expect empty array if argument length is more than or less than three
+  √ PASS: function should return array
+  √ PASS: function should return with new array with one entry for each key/value pair.
+

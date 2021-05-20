@@ -1,0 +1,628 @@
+Thu May 20 2021, 11:54:18 AM
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:1:4:
+> 1 | /**
+    |    ^
+  2 |  * Splits an object into multiple objects with one key/value pair each.
+  3 |  * The new objects are returned in an array.
+  4 |  *
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:2:72:
+  1 | /**
+> 2 |  * Splits an object into multiple objects with one key/value pair each.
+    |                                                                        ^
+  3 |  * The new objects are returned in an array.
+  4 |  *
+  5 |  * This function has no side-effects, the argument object is not modified
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:3:45:
+  1 | /**
+  2 |  * Splits an object into multiple objects with one key/value pair each.
+> 3 |  * The new objects are returned in an array.
+    |                                             ^
+  4 |  *
+  5 |  * This function has no side-effects, the argument object is not modified
+  6 |  *
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:4:3:
+  2 |  * Splits an object into multiple objects with one key/value pair each.
+  3 |  * The new objects are returned in an array.
+> 4 |  *
+    |   ^
+  5 |  * This function has no side-effects, the argument object is not modified
+  6 |  *
+  7 |  * @param {Object} [toSeparate={}] - The object to split into key/value pairs.
+
+
+warning: Sentence must end with a period (jsdoc/require-description-complete-sentence) at src/split-object/split-object.js:
+  2 |  * Splits an object into multiple objects with one key/value pair each.
+  3 |  * The new objects are returned in an array.
+> 4 |  *
+    | ^
+  5 |  * This function has no side-effects, the argument object is not modified
+  6 |  *
+  7 |  * @param {Object} [toSeparate={}] - The object to split into key/value pairs.
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:5:74:
+  3 |  * The new objects are returned in an array.
+  4 |  *
+> 5 |  * This function has no side-effects, the argument object is not modified
+    |                                                                          ^
+  6 |  *
+  7 |  * @param {Object} [toSeparate={}] - The object to split into key/value pairs.
+  8 |  * @returns {Array} Returns a new array with one entry for each key/value pair.
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:6:3:
+  4 |  *
+  5 |  * This function has no side-effects, the argument object is not modified
+> 6 |  *
+    |   ^
+  7 |  * @param {Object} [toSeparate={}] - The object to split into key/value pairs.
+  8 |  * @returns {Array} Returns a new array with one entry for each key/value pair.
+  9 |  * @example
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:7:79:
+   5 |  * This function has no side-effects, the argument object is not modified
+   6 |  *
+>  7 |  * @param {Object} [toSeparate={}] - The object to split into key/value pairs.
+     |                                                                               ^
+   8 |  * @returns {Array} Returns a new array with one entry for each key/value pair.
+   9 |  * @example
+  10 |  *
+
+
+warning: Invalid JSDoc @param "toSeparate" type "Object"; prefer: "object" (jsdoc/check-types) at src/split-object/split-object.js:
+   5 |  * This function has no side-effects, the argument object is not modified
+   6 |  *
+>  7 |  * @param {Object} [toSeparate={}] - The object to split into key/value pairs.
+     | ^
+   8 |  * @returns {Array} Returns a new array with one entry for each key/value pair.
+   9 |  * @example
+  10 |  *
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:8:80:
+   6 |  *
+   7 |  * @param {Object} [toSeparate={}] - The object to split into key/value pairs.
+>  8 |  * @returns {Array} Returns a new array with one entry for each key/value pair.
+     |                                                                                ^
+   9 |  * @example
+  10 |  *
+  11 |  * splitObject({ a: 1, b: 2, c: 3 });
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:9:12:
+   7 |  * @param {Object} [toSeparate={}] - The object to split into key/value pairs.
+   8 |  * @returns {Array} Returns a new array with one entry for each key/value pair.
+>  9 |  * @example
+     |            ^
+  10 |  *
+  11 |  * splitObject({ a: 1, b: 2, c: 3 });
+  12 |  * // -> [{ a: 1 }, { b: 2 }, { c: 3 }]
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:10:3:
+   8 |  * @returns {Array} Returns a new array with one entry for each key/value pair.
+   9 |  * @example
+> 10 |  *
+     |   ^
+  11 |  * splitObject({ a: 1, b: 2, c: 3 });
+  12 |  * // -> [{ a: 1 }, { b: 2 }, { c: 3 }]
+  13 |  *
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:11:38:
+   9 |  * @example
+  10 |  *
+> 11 |  * splitObject({ a: 1, b: 2, c: 3 });
+     |                                      ^
+  12 |  * // -> [{ a: 1 }, { b: 2 }, { c: 3 }]
+  13 |  *
+  14 |  * @example
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:12:40:
+  10 |  *
+  11 |  * splitObject({ a: 1, b: 2, c: 3 });
+> 12 |  * // -> [{ a: 1 }, { b: 2 }, { c: 3 }]
+     |                                        ^
+  13 |  *
+  14 |  * @example
+  15 |  *
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:13:3:
+  11 |  * splitObject({ a: 1, b: 2, c: 3 });
+  12 |  * // -> [{ a: 1 }, { b: 2 }, { c: 3 }]
+> 13 |  *
+     |   ^
+  14 |  * @example
+  15 |  *
+  16 |  * splitObject({});
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:14:12:
+  12 |  * // -> [{ a: 1 }, { b: 2 }, { c: 3 }]
+  13 |  *
+> 14 |  * @example
+     |            ^
+  15 |  *
+  16 |  * splitObject({});
+  17 |  * // -> []
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:15:3:
+  13 |  *
+  14 |  * @example
+> 15 |  *
+     |   ^
+  16 |  * splitObject({});
+  17 |  * // -> []
+  18 |  *
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:16:20:
+  14 |  * @example
+  15 |  *
+> 16 |  * splitObject({});
+     |                    ^
+  17 |  * // -> []
+  18 |  *
+  19 |  */
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:17:12:
+  15 |  *
+  16 |  * splitObject({});
+> 17 |  * // -> []
+     |            ^
+  18 |  *
+  19 |  */
+  20 | export const splitObject = (toSeparate = {}) => {
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:18:3:
+  16 |  * splitObject({});
+  17 |  * // -> []
+> 18 |  *
+     |   ^
+  19 |  */
+  20 | export const splitObject = (toSeparate = {}) => {
+  21 |   let obj1 = {};
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:19:4:
+  17 |  * // -> []
+  18 |  *
+> 19 |  */
+     |    ^
+  20 | export const splitObject = (toSeparate = {}) => {
+  21 |   let obj1 = {};
+  22 |   let obj2 = {};
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:20:50:
+  18 |  *
+  19 |  */
+> 20 | export const splitObject = (toSeparate = {}) => {
+     |                                                  ^
+  21 |   let obj1 = {};
+  22 |   let obj2 = {};
+  23 |   let obj3 = {};
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:21:17:
+  19 |  */
+  20 | export const splitObject = (toSeparate = {}) => {
+> 21 |   let obj1 = {};
+     |                 ^
+  22 |   let obj2 = {};
+  23 |   let obj3 = {};
+  24 |   const arr = [];
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:22:17:
+  20 | export const splitObject = (toSeparate = {}) => {
+  21 |   let obj1 = {};
+> 22 |   let obj2 = {};
+     |                 ^
+  23 |   let obj3 = {};
+  24 |   const arr = [];
+  25 |   if (typeof toSeparate === "object" && Object.keys(toSeparate).length === 3) {
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:23:17:
+  21 |   let obj1 = {};
+  22 |   let obj2 = {};
+> 23 |   let obj3 = {};
+     |                 ^
+  24 |   const arr = [];
+  25 |   if (typeof toSeparate === "object" && Object.keys(toSeparate).length === 3) {
+  26 |     // eslint-disable-next-line padded-blocks
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:24:18:
+  22 |   let obj2 = {};
+  23 |   let obj3 = {};
+> 24 |   const arr = [];
+     |                  ^
+  25 |   if (typeof toSeparate === "object" && Object.keys(toSeparate).length === 3) {
+  26 |     // eslint-disable-next-line padded-blocks
+  27 |     if (Object.keys(toSeparate).length === 0) {
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:25:80:
+  23 |   let obj3 = {};
+  24 |   const arr = [];
+> 25 |   if (typeof toSeparate === "object" && Object.keys(toSeparate).length === 3) {
+     |                                                                                ^
+  26 |     // eslint-disable-next-line padded-blocks
+  27 |     if (Object.keys(toSeparate).length === 0) {
+  28 |       return arr;
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:26:46:
+  24 |   const arr = [];
+  25 |   if (typeof toSeparate === "object" && Object.keys(toSeparate).length === 3) {
+> 26 |     // eslint-disable-next-line padded-blocks
+     |                                              ^
+  27 |     if (Object.keys(toSeparate).length === 0) {
+  28 |       return arr;
+  29 |     } else {
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:27:48:
+  25 |   if (typeof toSeparate === "object" && Object.keys(toSeparate).length === 3) {
+  26 |     // eslint-disable-next-line padded-blocks
+> 27 |     if (Object.keys(toSeparate).length === 0) {
+     |                                                ^
+  28 |       return arr;
+  29 |     } else {
+  30 |       const keys = Object.keys(toSeparate);
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:28:18:
+  26 |     // eslint-disable-next-line padded-blocks
+  27 |     if (Object.keys(toSeparate).length === 0) {
+> 28 |       return arr;
+     |                  ^
+  29 |     } else {
+  30 |       const keys = Object.keys(toSeparate);
+  31 |       const keysLength = keys.length;
+
+
+error: Unnecessary 'else' after 'return' (no-else-return) at src/split-object/split-object.js:29:12:
+  27 |     if (Object.keys(toSeparate).length === 0) {
+  28 |       return arr;
+> 29 |     } else {
+     |            ^
+  30 |       const keys = Object.keys(toSeparate);
+  31 |       const keysLength = keys.length;
+  32 |       let k = 0;
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:29:13:
+  27 |     if (Object.keys(toSeparate).length === 0) {
+  28 |       return arr;
+> 29 |     } else {
+     |             ^
+  30 |       const keys = Object.keys(toSeparate);
+  31 |       const keysLength = keys.length;
+  32 |       let k = 0;
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:30:44:
+  28 |       return arr;
+  29 |     } else {
+> 30 |       const keys = Object.keys(toSeparate);
+     |                                            ^
+  31 |       const keysLength = keys.length;
+  32 |       let k = 0;
+  33 | 
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:31:38:
+  29 |     } else {
+  30 |       const keys = Object.keys(toSeparate);
+> 31 |       const keysLength = keys.length;
+     |                                      ^
+  32 |       let k = 0;
+  33 | 
+  34 |       for (let i = 0; i <= keysLength; i++) {
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:32:17:
+  30 |       const keys = Object.keys(toSeparate);
+  31 |       const keysLength = keys.length;
+> 32 |       let k = 0;
+     |                 ^
+  33 | 
+  34 |       for (let i = 0; i <= keysLength; i++) {
+  35 |         const key = keys[i];
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:33:1:
+  31 |       const keysLength = keys.length;
+  32 |       let k = 0;
+> 33 | 
+     | ^
+  34 |       for (let i = 0; i <= keysLength; i++) {
+  35 |         const key = keys[i];
+  36 |         if (k === 0) {
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:34:46:
+  32 |       let k = 0;
+  33 | 
+> 34 |       for (let i = 0; i <= keysLength; i++) {
+     |                                              ^
+  35 |         const key = keys[i];
+  36 |         if (k === 0) {
+  37 |           obj1 = { ...obj1, [key]: toSeparate[key] };
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:35:29:
+  33 | 
+  34 |       for (let i = 0; i <= keysLength; i++) {
+> 35 |         const key = keys[i];
+     |                             ^
+  36 |         if (k === 0) {
+  37 |           obj1 = { ...obj1, [key]: toSeparate[key] };
+  38 |           k++;
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:36:23:
+  34 |       for (let i = 0; i <= keysLength; i++) {
+  35 |         const key = keys[i];
+> 36 |         if (k === 0) {
+     |                       ^
+  37 |           obj1 = { ...obj1, [key]: toSeparate[key] };
+  38 |           k++;
+  39 |         } else if (k === 1) {
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:37:54:
+  35 |         const key = keys[i];
+  36 |         if (k === 0) {
+> 37 |           obj1 = { ...obj1, [key]: toSeparate[key] };
+     |                                                      ^
+  38 |           k++;
+  39 |         } else if (k === 1) {
+  40 |           obj2 = { ...obj2, [key]: toSeparate[key] };
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:38:15:
+  36 |         if (k === 0) {
+  37 |           obj1 = { ...obj1, [key]: toSeparate[key] };
+> 38 |           k++;
+     |               ^
+  39 |         } else if (k === 1) {
+  40 |           obj2 = { ...obj2, [key]: toSeparate[key] };
+  41 |           k++;
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:39:30:
+  37 |           obj1 = { ...obj1, [key]: toSeparate[key] };
+  38 |           k++;
+> 39 |         } else if (k === 1) {
+     |                              ^
+  40 |           obj2 = { ...obj2, [key]: toSeparate[key] };
+  41 |           k++;
+  42 |         } else if (k === 2) {
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:40:54:
+  38 |           k++;
+  39 |         } else if (k === 1) {
+> 40 |           obj2 = { ...obj2, [key]: toSeparate[key] };
+     |                                                      ^
+  41 |           k++;
+  42 |         } else if (k === 2) {
+  43 |           obj3 = { ...obj3, [key]: toSeparate[key] };
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:41:15:
+  39 |         } else if (k === 1) {
+  40 |           obj2 = { ...obj2, [key]: toSeparate[key] };
+> 41 |           k++;
+     |               ^
+  42 |         } else if (k === 2) {
+  43 |           obj3 = { ...obj3, [key]: toSeparate[key] };
+  44 |           k++;
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:42:30:
+  40 |           obj2 = { ...obj2, [key]: toSeparate[key] };
+  41 |           k++;
+> 42 |         } else if (k === 2) {
+     |                              ^
+  43 |           obj3 = { ...obj3, [key]: toSeparate[key] };
+  44 |           k++;
+  45 |         }
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:43:54:
+  41 |           k++;
+  42 |         } else if (k === 2) {
+> 43 |           obj3 = { ...obj3, [key]: toSeparate[key] };
+     |                                                      ^
+  44 |           k++;
+  45 |         }
+  46 |       }
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:44:15:
+  42 |         } else if (k === 2) {
+  43 |           obj3 = { ...obj3, [key]: toSeparate[key] };
+> 44 |           k++;
+     |               ^
+  45 |         }
+  46 |       }
+  47 |     }
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:45:10:
+  43 |           obj3 = { ...obj3, [key]: toSeparate[key] };
+  44 |           k++;
+> 45 |         }
+     |          ^
+  46 |       }
+  47 |     }
+  48 |     arr.push(obj1);
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:46:8:
+  44 |           k++;
+  45 |         }
+> 46 |       }
+     |        ^
+  47 |     }
+  48 |     arr.push(obj1);
+  49 |     arr.push(obj2);
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:47:6:
+  45 |         }
+  46 |       }
+> 47 |     }
+     |      ^
+  48 |     arr.push(obj1);
+  49 |     arr.push(obj2);
+  50 |     arr.push(obj3);
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:48:20:
+  46 |       }
+  47 |     }
+> 48 |     arr.push(obj1);
+     |                    ^
+  49 |     arr.push(obj2);
+  50 |     arr.push(obj3);
+  51 |     //console.log(arr);
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:49:20:
+  47 |     }
+  48 |     arr.push(obj1);
+> 49 |     arr.push(obj2);
+     |                    ^
+  50 |     arr.push(obj3);
+  51 |     //console.log(arr);
+  52 |     return arr;
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:50:20:
+  48 |     arr.push(obj1);
+  49 |     arr.push(obj2);
+> 50 |     arr.push(obj3);
+     |                    ^
+  51 |     //console.log(arr);
+  52 |     return arr;
+  53 |   } else {
+
+
+error: Expected exception block, space or tab after '//' in comment (spaced-comment) at src/split-object/split-object.js:51:5:
+  49 |     arr.push(obj2);
+  50 |     arr.push(obj3);
+> 51 |     //console.log(arr);
+     |     ^
+  52 |     return arr;
+  53 |   } else {
+  54 |     console.log("argument should be object and length should be three ");
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:51:24:
+  49 |     arr.push(obj2);
+  50 |     arr.push(obj3);
+> 51 |     //console.log(arr);
+     |                        ^
+  52 |     return arr;
+  53 |   } else {
+  54 |     console.log("argument should be object and length should be three ");
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:52:16:
+  50 |     arr.push(obj3);
+  51 |     //console.log(arr);
+> 52 |     return arr;
+     |                ^
+  53 |   } else {
+  54 |     console.log("argument should be object and length should be three ");
+  55 |     return arr;
+
+
+error: Unnecessary 'else' after 'return' (no-else-return) at src/split-object/split-object.js:53:10:
+  51 |     //console.log(arr);
+  52 |     return arr;
+> 53 |   } else {
+     |          ^
+  54 |     console.log("argument should be object and length should be three ");
+  55 |     return arr;
+  56 |   }
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:53:11:
+  51 |     //console.log(arr);
+  52 |     return arr;
+> 53 |   } else {
+     |           ^
+  54 |     console.log("argument should be object and length should be three ");
+  55 |     return arr;
+  56 |   }
+
+
+warning: Unexpected console statement (no-console) at src/split-object/split-object.js:54:5:
+  52 |     return arr;
+  53 |   } else {
+> 54 |     console.log("argument should be object and length should be three ");
+     |     ^
+  55 |     return arr;
+  56 |   }
+  57 | };
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:54:74:
+  52 |     return arr;
+  53 |   } else {
+> 54 |     console.log("argument should be object and length should be three ");
+     |                                                                          ^
+  55 |     return arr;
+  56 |   }
+  57 | };
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:55:16:
+  53 |   } else {
+  54 |     console.log("argument should be object and length should be three ");
+> 55 |     return arr;
+     |                ^
+  56 |   }
+  57 | };
+  58 | 
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:56:4:
+  54 |     console.log("argument should be object and length should be three ");
+  55 |     return arr;
+> 56 |   }
+     |    ^
+  57 | };
+  58 | 
+
+
+warning: Delete `␍` (prettier/prettier) at src/split-object/split-object.js:57:3:
+  55 |     return arr;
+  56 |   }
+> 57 | };
+     |   ^
+  58 | 
+
+
+3 errors and 60 warnings found.
+3 errors and 59 warnings potentially fixable with the `--fix` option.
