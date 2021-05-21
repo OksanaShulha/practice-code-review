@@ -58,6 +58,52 @@ splitObject({});
 // -> []
 ```
 
+## Strategy
+```js
+/* iterating until the new string's length is correct
+
+ splitObject = (toSeparate = {}) => 
+    1. Check if the argument is object and length should be three.
+      a.If it is not an object then it will return  empty array.
+      b.else Keep going 
+    2. create three new empty object to fill 
+    3. iterate as long as with object length
+      a. access value using key and store key /value pair into new empty object.keep going 
+      b. repeat
+    return: Returns a new array with one entry for each key/value pair.
+*/
+```
+## Implementation
+```js
+/*
+for (let i = 0; i <= keysLength; i++) {
+      const key = keys[i];
+      if (k === 0) {
+        obj1 = { ...obj1, [key]: toSeparate[key] };
+        k++;
+      } else if (k === 1) {
+        obj2 = { ...obj2, [key]: toSeparate[key] };
+        k++;
+      } else if (k === 2) {
+        obj3 = { ...obj3, [key]: toSeparate[key] };
+        k++;
+      }
+    }
+
+    arr.push(obj1);
+    arr.push(obj2);
+    arr.push(obj3);
+
+    return arr;
+*/
+
+---
+
+## Use Cases
+
+---
+
+
 > Docs generated: Thu May 20 2021, 11:07:35 AM
 
 <!-- END DOCS -->
