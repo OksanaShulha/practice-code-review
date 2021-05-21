@@ -7,7 +7,6 @@
  */
 
 export const arrayIntersection = (firstArr = [], secondArr = []) => {
-  let newArrayIntersected = [];
   // Test if the arguments are arrays and make sure that arguments are passed
   if (!Array.isArray(firstArr) || !Array.isArray(secondArr)) {
     throw new TypeError('The arguments must be arrays');
@@ -15,7 +14,6 @@ export const arrayIntersection = (firstArr = [], secondArr = []) => {
     throw new Error('Must pas two arrays to intercept the values');
   } else {
     // test if arrays have the same values, return only the values matched
-    newArrayIntersected = [...new Set(firstArr.filter((x) => secondArr.includes(x)))];
+    return [...new Set(firstArr.filter((x) => secondArr.includes(x)))];
   }
-  return newArrayIntersected;
 };

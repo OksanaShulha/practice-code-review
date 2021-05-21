@@ -1,4 +1,4 @@
-Thu May 20 2021, 7:17:32 AM
+Fri May 21 2021, 11:36:24 AM
 
 Intersect the elements that are equal and return them in a new array
   testing default parameters
