@@ -26,8 +26,9 @@ export const splitObject = (toSeparate = {}) => {
   const arr = [];
   // check argument type is object and length is three
   if (
-    typeof toSeparate === 'object' &&
-    Object.keys(toSeparate).length === 3 &&
+    typeof toSeparate != "object" ||
+    Object.keys(toSeparate).length > 3 ||
+    Object.keys(toSeparate).length < 3 ||
     Object.keys(toSeparate).length === 0
   ) {
     return arr; // return empty array

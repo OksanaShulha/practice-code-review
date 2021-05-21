@@ -27,7 +27,7 @@ describe("Splits an object into multiple objects", () => {
   });
 
   it("function should return array", () => {
-    expect(splitObject({ a: 1, b: 2 }, { c: 3 })).toEqual([]);
+    expect(splitObject({ a: 1, b: 2 ,  c: 3 })).toEqual([ { a: 1 },{ b: 2 },{ c: 3 }]);
   });
 
   it("function should return with new array with one entry for each key/value pair.", () => {
