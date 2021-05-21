@@ -24,8 +24,6 @@ moveZeros([0, 2, 0, 0, 3, 2, 1, 3]); // -> [2, 3, 2, 1, 3, 0, 0, 0]
 moveZeros([-1, 0, 2, 0, 1]); // -> [-1, 2, 1, 0, 0]
 ```
 
-<!-- END DOCS -->
-
 ## Strategy
 
 I chose to used array methods to solve this challenge because its interesting to see how a function will call out an specific variable to be separate it from the others and be send out to the end of the array
@@ -66,3 +64,5 @@ console.log(resultStrings); // ['2', '0', '0']
 ## Inspiration
 
 I remember this example from last week exercises from ([Edabit])(https://edabit.com/challenges)
+
+<!-- END DOCS -->
