@@ -16,8 +16,8 @@
  */
 
 export const deepFlat = (array = []) => {
+  // clone the array to avoid syde-effects
   const newArray = [...array];
+  // using a flat method
   return newArray.flat(Infinity);
 };
-// To avoid a side-effects a new is created. The depth parameter is 3.
-// The new flattened array is returned.

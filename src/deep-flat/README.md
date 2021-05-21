@@ -31,21 +31,18 @@ Here's a starter docstring for your solutions. Feel free to rewrite it if that h
 > Docstring is adapted from [lodash's flattenDeep](https://github.com/lodash/lodash/blob/4.17.15/lodash.js#L7330)
 
 ## Strategy
-I am going to use a "depth" parameter, so I can pass in any levels of nesting. I have to set the appropriate depth parameter to flatten deeper nested arrays.
----
+Use a flat method.
 
 ## Implementation
-
----
+Declare a new function with empty array.
+Create a new array to avoid side-effects.
+Return the new array with a "depth" parameter Infinity, so it can pass in any levels of nesting. 
 
 ## Use Cases
-const matrix = [
-    [0, 1, 2],
-    [3, 4, 5],
-    [6, 7, 8],
-];
-console.log(deepFlat(matrix));
----
+const nested = [[ ':package:', ':package:' ], [ ':package:' ]];
+const flattened = nested.flat();
+console.log(flattened);
+[ ':package:', ':package:',':package:' ]
 
 ## Inspiration
 
