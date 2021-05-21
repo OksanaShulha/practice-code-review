@@ -16,7 +16,7 @@
  */
 
 export const deepFlat = (array = []) => {
-  // clone the array to avoid syde-effects
+  // cloning the array to avoid side-effects
   const newArray = [...array];
   // using a flat method
   return newArray.flat(Infinity);
