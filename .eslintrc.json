@@ -1,4 +1,6 @@
 {
+  "plugins": ["jsdoc", "spellcheck"],
+=======
   "plugins": ["jsdoc", "spellcheck", "prefer-arrow", "prettier"],
   "parserOptions": {
     "sourceType": "module",
@@ -20,6 +22,8 @@
         "no-magic-numbers": 0,
         "no-console": 0,
         "no-unused-expressions": 0,
+        "no-lone-blocks": 0
+=======
         "no-lone-blocks": 0,
         "jsdoc/require-jsdoc": 0
       },
@@ -29,6 +33,8 @@
       }
     }
   ],
+  "extends": ["eslint:recommended", "airbnb-base"],
+=======
   "ignorePatterns": ["dev-scripts/*.js"],
   "extends": ["eslint:recommended", "airbnb-base", "prettier"],
   "rules": {
@@ -52,7 +58,6 @@
     "vars-on-top": 0,
     "no-plusplus": 0,
     "no-restricted-syntax": 0,
-
     "prettier/prettier": 1,
 
     "prefer-arrow/prefer-arrow-functions": ["warn"],

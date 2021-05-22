@@ -1,4 +1,3 @@
-
 # Sort Numbers
 
 Write a function that sorts an array of numbers. There's many many strategies for sorting numbers, enjoy!
@@ -25,7 +24,7 @@ Here's a starter docstring for your solutions. Feel free to rewrite it if that h
  * // -> [-1.5, -1, 0, 1, 1.5]
  */
 ```
-=======
+
 # Sort Numbers : use an array method to sort numbers
 
 <!-- BEGIN OF THE DOCS -->

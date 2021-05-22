@@ -1,0 +1,17 @@
+Sat May 22 2021, 12:24:36 AM
+
+flattens arrays with different levels of depths
+  default value, array with 1 level of depth
+    √ PASS: an empty array
+    √ PASS: without any arguments
+    √ PASS: array with numbers
+    √ PASS: using primitive types
+  flattens array with 2 levels of depth
+    √ PASS: array with numbers
+    √ PASS: array with strings
+    √ PASS: using primitive types
+  flattens array with 3 levels of depth
+    √ PASS: array with numbers
+    √ PASS: array with strings
+    √ PASS: using primitive types
+
