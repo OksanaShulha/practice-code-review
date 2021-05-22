@@ -1,0 +1,514 @@
+Wed May 19 2021, 18:59:46
+
+warning: You have a misspelled word: fs on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:3:8:
+  1 | import { fileURLToPath } from 'url';
+  2 | import path from 'path';
+> 3 | import fs from 'fs';
+    |        ^
+  4 | import util from 'util';
+  5 | 
+  6 | import eslintPackage from 'eslint';
+
+
+error: 'eslint' should be listed in the project's dependencies, not devDependencies (import/no-extraneous-dependencies) at dev-scripts/lint.js:6:27:
+  4 | import util from 'util';
+  5 | 
+> 6 | import eslintPackage from 'eslint';
+    |                           ^
+  7 | 
+  8 | const unlinkPromise = util.promisify(fs.unlink);
+  9 | 
+
+
+warning: You have a misspelled word: unlink on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:8:7:
+   6 | import eslintPackage from 'eslint';
+   7 | 
+>  8 | const unlinkPromise = util.promisify(fs.unlink);
+     |       ^
+   9 | 
+  10 | const rootPath = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
+  11 | 
+
+
+warning: You have a misspelled word: promisify on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:8:28:
+   6 | import eslintPackage from 'eslint';
+   7 | 
+>  8 | const unlinkPromise = util.promisify(fs.unlink);
+     |                            ^
+   9 | 
+  10 | const rootPath = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
+  11 | 
+
+
+warning: You have a misspelled word: fs on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:8:38:
+   6 | import eslintPackage from 'eslint';
+   7 | 
+>  8 | const unlinkPromise = util.promisify(fs.unlink);
+     |                                      ^
+   9 | 
+  10 | const rootPath = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
+  11 | 
+
+
+warning: You have a misspelled word: unlink on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:8:41:
+   6 | import eslintPackage from 'eslint';
+   7 | 
+>  8 | const unlinkPromise = util.promisify(fs.unlink);
+     |                                         ^
+   9 | 
+  10 | const rootPath = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
+  11 | 
+
+
+error: There should be no line break before or after '=' (operator-linebreak) at dev-scripts/lint.js:12:18:
+  10 | const rootPath = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
+  11 | 
+> 12 | const passedPath =
+     |                  ^
+  13 |   process.argv[2] && path.normalize(path.join(rootPath, process.argv[2]));
+  14 | 
+  15 | if (!fs.existsSync(passedPath)) {
+
+
+warning: You have a misspelled word: argv on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:13:11:
+  11 | 
+  12 | const passedPath =
+> 13 |   process.argv[2] && path.normalize(path.join(rootPath, process.argv[2]));
+     |           ^
+  14 | 
+  15 | if (!fs.existsSync(passedPath)) {
+  16 |   console.log('path does not exist');
+
+
+warning: You have a misspelled word: argv on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:13:65:
+  11 | 
+  12 | const passedPath =
+> 13 |   process.argv[2] && path.normalize(path.join(rootPath, process.argv[2]));
+     |                                                                 ^
+  14 | 
+  15 | if (!fs.existsSync(passedPath)) {
+  16 |   console.log('path does not exist');
+
+
+warning: You have a misspelled word: fs on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:15:6:
+  13 |   process.argv[2] && path.normalize(path.join(rootPath, process.argv[2]));
+  14 | 
+> 15 | if (!fs.existsSync(passedPath)) {
+     |      ^
+  16 |   console.log('path does not exist');
+  17 |   process.exit(0);
+  18 | }
+
+
+warning: Unexpected console statement (no-console) at dev-scripts/lint.js:16:3:
+  14 | 
+  15 | if (!fs.existsSync(passedPath)) {
+> 16 |   console.log('path does not exist');
+     |   ^
+  17 |   process.exit(0);
+  18 | }
+  19 | 
+
+
+error: There should be no line break before or after '=' (operator-linebreak) at dev-scripts/lint.js:20:16:
+  18 | }
+  19 | 
+> 20 | const isJsFile =
+     |                ^
+  21 |   fs.lstatSync(passedPath).isFile() && path.extname(passedPath) === '.js';
+  22 | 
+  23 | if (!isJsFile) {
+
+
+warning: You have a misspelled word: fs on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:21:3:
+  19 | 
+  20 | const isJsFile =
+> 21 |   fs.lstatSync(passedPath).isFile() && path.extname(passedPath) === '.js';
+     |   ^
+  22 | 
+  23 | if (!isJsFile) {
+  24 |   console.log('path is not a JS file');
+
+
+warning: You have a misspelled word: lstat on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:21:6:
+  19 | 
+  20 | const isJsFile =
+> 21 |   fs.lstatSync(passedPath).isFile() && path.extname(passedPath) === '.js';
+     |      ^
+  22 | 
+  23 | if (!isJsFile) {
+  24 |   console.log('path is not a JS file');
+
+
+warning: Unexpected console statement (no-console) at dev-scripts/lint.js:24:3:
+  22 | 
+  23 | if (!isJsFile) {
+> 24 |   console.log('path is not a JS file');
+     |   ^
+  25 |   process.exit(0);
+  26 | }
+  27 | 
+
+
+warning: You have a misspelled word: argv on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:28:46:
+  26 | }
+  27 | 
+> 28 | const filePath = path.join(rootPath, process.argv[2]);
+     |                                              ^
+  29 | 
+  30 | (async () => {
+  31 |   try {
+
+
+warning: You have a misspelled word: formatter on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:36:11:
+  34 |     const results = await eslint.lintFiles(filePath);
+  35 | 
+> 36 |     const formatter = await eslint.loadFormatter('codeframe');
+     |           ^
+  37 |     const lintResult = formatter.format(results);
+  38 |     console.log(lintResult);
+  39 | 
+
+
+warning: You have a misspelled word: Formatter on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:36:36:
+  34 |     const results = await eslint.lintFiles(filePath);
+  35 | 
+> 36 |     const formatter = await eslint.loadFormatter('codeframe');
+     |                                    ^
+  37 |     const lintResult = formatter.format(results);
+  38 |     console.log(lintResult);
+  39 | 
+
+
+warning: You have a misspelled word: codeframe on String (spellcheck/spell-checker) at dev-scripts/lint.js:36:50:
+  34 |     const results = await eslint.lintFiles(filePath);
+  35 | 
+> 36 |     const formatter = await eslint.loadFormatter('codeframe');
+     |                                                  ^
+  37 |     const lintResult = formatter.format(results);
+  38 |     console.log(lintResult);
+  39 | 
+
+
+warning: You have a misspelled word: formatter on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:37:24:
+  35 | 
+  36 |     const formatter = await eslint.loadFormatter('codeframe');
+> 37 |     const lintResult = formatter.format(results);
+     |                        ^
+  38 |     console.log(lintResult);
+  39 | 
+  40 |     if (
+
+
+warning: Unexpected console statement (no-console) at dev-scripts/lint.js:38:5:
+  36 |     const formatter = await eslint.loadFormatter('codeframe');
+  37 |     const lintResult = formatter.format(results);
+> 38 |     console.log(lintResult);
+     |     ^
+  39 | 
+  40 |     if (
+  41 |       !path.basename(filePath).includes('.spec.js') &&
+
+
+error: '&&' should be placed at the beginning of the line (operator-linebreak) at dev-scripts/lint.js:41:53:
+  39 | 
+  40 |     if (
+> 41 |       !path.basename(filePath).includes('.spec.js') &&
+     |                                                     ^
+  42 |       !path.basename(filePath).includes('sandbox.js')
+  43 |     ) {
+  44 |       const successMessage = 'all good';
+
+
+error: Expected indentation of 10 spaces but found 12 (indent) at dev-scripts/lint.js:48:1:
+  46 |       const cleanResult = lintResult
+  47 |         ? lintResult.replace(
+> 48 |             /[\u001b\u009b][[()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g,
+     | ^
+  49 |             ''
+  50 |           )
+  51 |         : successMessage;
+
+
+error: Unexpected control character(s) in regular expression: \x1b (no-control-regex) at dev-scripts/lint.js:48:13:
+  46 |       const cleanResult = lintResult
+  47 |         ? lintResult.replace(
+> 48 |             /[\u001b\u009b][[()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g,
+     |             ^
+  49 |             ''
+  50 |           )
+  51 |         : successMessage;
+
+
+error: Expected indentation of 10 spaces but found 12 (indent) at dev-scripts/lint.js:49:1:
+  47 |         ? lintResult.replace(
+  48 |             /[\u001b\u009b][[()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g,
+> 49 |             ''
+     | ^
+  50 |           )
+  51 |         : successMessage;
+  52 | 
+
+
+error: Missing trailing comma (comma-dangle) at dev-scripts/lint.js:49:15:
+  47 |         ? lintResult.replace(
+  48 |             /[\u001b\u009b][[()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g,
+> 49 |             ''
+     |               ^
+  50 |           )
+  51 |         : successMessage;
+  52 | 
+
+
+error: Expected indentation of 8 spaces but found 10 (indent) at dev-scripts/lint.js:50:1:
+  48 |             /[\u001b\u009b][[()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g,
+  49 |             ''
+> 50 |           )
+     | ^
+  51 |         : successMessage;
+  52 | 
+  53 |       const now = new Date();
+
+
+error: Strings must use singlequote (quotes) at dev-scripts/lint.js:56:48:
+  54 |       const lintReport = `${now.toDateString()}, ${now.toLocaleTimeString()}\n\n${cleanResult}`;
+  55 | 
+> 56 |       const passPath = filePath.replace('.js', `.lint-pass.txt`);
+     |                                                ^
+  57 |       const failPath = filePath.replace('.js', `.lint-fail.txt`);
+  58 |       const errorPath = filePath.replace('.js', `.lint-error.txt`);
+  59 |       if (fs.existsSync(passPath)) {
+
+
+warning: You have a misspelled word: txt on Template (spellcheck/spell-checker) at dev-scripts/lint.js:56:48:
+  54 |       const lintReport = `${now.toDateString()}, ${now.toLocaleTimeString()}\n\n${cleanResult}`;
+  55 | 
+> 56 |       const passPath = filePath.replace('.js', `.lint-pass.txt`);
+     |                                                ^
+  57 |       const failPath = filePath.replace('.js', `.lint-fail.txt`);
+  58 |       const errorPath = filePath.replace('.js', `.lint-error.txt`);
+  59 |       if (fs.existsSync(passPath)) {
+
+
+error: Strings must use singlequote (quotes) at dev-scripts/lint.js:57:48:
+  55 | 
+  56 |       const passPath = filePath.replace('.js', `.lint-pass.txt`);
+> 57 |       const failPath = filePath.replace('.js', `.lint-fail.txt`);
+     |                                                ^
+  58 |       const errorPath = filePath.replace('.js', `.lint-error.txt`);
+  59 |       if (fs.existsSync(passPath)) {
+  60 |         await unlinkPromise(passPath);
+
+
+warning: You have a misspelled word: txt on Template (spellcheck/spell-checker) at dev-scripts/lint.js:57:48:
+  55 | 
+  56 |       const passPath = filePath.replace('.js', `.lint-pass.txt`);
+> 57 |       const failPath = filePath.replace('.js', `.lint-fail.txt`);
+     |                                                ^
+  58 |       const errorPath = filePath.replace('.js', `.lint-error.txt`);
+  59 |       if (fs.existsSync(passPath)) {
+  60 |         await unlinkPromise(passPath);
+
+
+error: Strings must use singlequote (quotes) at dev-scripts/lint.js:58:49:
+  56 |       const passPath = filePath.replace('.js', `.lint-pass.txt`);
+  57 |       const failPath = filePath.replace('.js', `.lint-fail.txt`);
+> 58 |       const errorPath = filePath.replace('.js', `.lint-error.txt`);
+     |                                                 ^
+  59 |       if (fs.existsSync(passPath)) {
+  60 |         await unlinkPromise(passPath);
+  61 |       }
+
+
+warning: You have a misspelled word: txt on Template (spellcheck/spell-checker) at dev-scripts/lint.js:58:49:
+  56 |       const passPath = filePath.replace('.js', `.lint-pass.txt`);
+  57 |       const failPath = filePath.replace('.js', `.lint-fail.txt`);
+> 58 |       const errorPath = filePath.replace('.js', `.lint-error.txt`);
+     |                                                 ^
+  59 |       if (fs.existsSync(passPath)) {
+  60 |         await unlinkPromise(passPath);
+  61 |       }
+
+
+warning: You have a misspelled word: fs on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:59:11:
+  57 |       const failPath = filePath.replace('.js', `.lint-fail.txt`);
+  58 |       const errorPath = filePath.replace('.js', `.lint-error.txt`);
+> 59 |       if (fs.existsSync(passPath)) {
+     |           ^
+  60 |         await unlinkPromise(passPath);
+  61 |       }
+  62 |       if (fs.existsSync(failPath)) {
+
+
+warning: You have a misspelled word: unlink on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:60:15:
+  58 |       const errorPath = filePath.replace('.js', `.lint-error.txt`);
+  59 |       if (fs.existsSync(passPath)) {
+> 60 |         await unlinkPromise(passPath);
+     |               ^
+  61 |       }
+  62 |       if (fs.existsSync(failPath)) {
+  63 |         await unlinkPromise(failPath);
+
+
+warning: You have a misspelled word: fs on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:62:11:
+  60 |         await unlinkPromise(passPath);
+  61 |       }
+> 62 |       if (fs.existsSync(failPath)) {
+     |           ^
+  63 |         await unlinkPromise(failPath);
+  64 |       }
+  65 |       if (fs.existsSync(errorPath)) {
+
+
+warning: You have a misspelled word: unlink on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:63:15:
+  61 |       }
+  62 |       if (fs.existsSync(failPath)) {
+> 63 |         await unlinkPromise(failPath);
+     |               ^
+  64 |       }
+  65 |       if (fs.existsSync(errorPath)) {
+  66 |         await unlinkPromise(errorPath);
+
+
+warning: You have a misspelled word: fs on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:65:11:
+  63 |         await unlinkPromise(failPath);
+  64 |       }
+> 65 |       if (fs.existsSync(errorPath)) {
+     |           ^
+  66 |         await unlinkPromise(errorPath);
+  67 |       }
+  68 | 
+
+
+warning: You have a misspelled word: unlink on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:66:15:
+  64 |       }
+  65 |       if (fs.existsSync(errorPath)) {
+> 66 |         await unlinkPromise(errorPath);
+     |               ^
+  67 |       }
+  68 | 
+  69 |       const reportPath =
+
+
+error: There should be no line break before or after '=' (operator-linebreak) at dev-scripts/lint.js:69:24:
+  67 |       }
+  68 | 
+> 69 |       const reportPath =
+     |                        ^
+  70 |         results[0].errorCount > 0
+  71 |           ? errorPath
+  72 |           : cleanResult === successMessage
+
+
+error: Do not nest ternary expressions (no-nested-ternary) at dev-scripts/lint.js:70:9:
+  68 | 
+  69 |       const reportPath =
+> 70 |         results[0].errorCount > 0
+     |         ^
+  71 |           ? errorPath
+  72 |           : cleanResult === successMessage
+  73 |           ? passPath
+
+
+error: Expected indentation of 12 spaces but found 10 (indent) at dev-scripts/lint.js:73:1:
+  71 |           ? errorPath
+  72 |           : cleanResult === successMessage
+> 73 |           ? passPath
+     | ^
+  74 |           : failPath;
+  75 | 
+  76 |       fs.writeFile(reportPath, lintReport, 'utf-8', (err) =>
+
+
+error: Expected indentation of 12 spaces but found 10 (indent) at dev-scripts/lint.js:74:1:
+  72 |           : cleanResult === successMessage
+  73 |           ? passPath
+> 74 |           : failPath;
+     | ^
+  75 | 
+  76 |       fs.writeFile(reportPath, lintReport, 'utf-8', (err) =>
+  77 |         err ? console.error(err) : null
+
+
+warning: You have a misspelled word: fs on Identifier (spellcheck/spell-checker) at dev-scripts/lint.js:76:7:
+  74 |           : failPath;
+  75 | 
+> 76 |       fs.writeFile(reportPath, lintReport, 'utf-8', (err) =>
+     |       ^
+  77 |         err ? console.error(err) : null
+  78 |       );
+  79 |     }
+
+
+warning: You have a misspelled word: utf on String (spellcheck/spell-checker) at dev-scripts/lint.js:76:44:
+  74 |           : failPath;
+  75 | 
+> 76 |       fs.writeFile(reportPath, lintReport, 'utf-8', (err) =>
+     |                                            ^
+  77 |         err ? console.error(err) : null
+  78 |       );
+  79 |     }
+
+
+warning: Arrow function used ambiguously with a conditional expression (no-confusing-arrow) at dev-scripts/lint.js:76:53:
+  74 |           : failPath;
+  75 | 
+> 76 |       fs.writeFile(reportPath, lintReport, 'utf-8', (err) =>
+     |                                                     ^
+  77 |         err ? console.error(err) : null
+  78 |       );
+  79 |     }
+
+
+error: Expected no linebreak before this expression (implicit-arrow-linebreak) at dev-scripts/lint.js:77:9:
+  75 | 
+  76 |       fs.writeFile(reportPath, lintReport, 'utf-8', (err) =>
+> 77 |         err ? console.error(err) : null
+     |         ^
+  78 |       );
+  79 |     }
+  80 |   } catch (err) {
+
+
+warning: Unexpected console statement (no-console) at dev-scripts/lint.js:77:15:
+  75 | 
+  76 |       fs.writeFile(reportPath, lintReport, 'utf-8', (err) =>
+> 77 |         err ? console.error(err) : null
+     |               ^
+  78 |       );
+  79 |     }
+  80 |   } catch (err) {
+
+
+error: Missing trailing comma (comma-dangle) at dev-scripts/lint.js:77:40:
+  75 | 
+  76 |       fs.writeFile(reportPath, lintReport, 'utf-8', (err) =>
+> 77 |         err ? console.error(err) : null
+     |                                        ^
+  78 |       );
+  79 |     }
+  80 |   } catch (err) {
+
+
+error: Unexpected newline before ')' (function-paren-newline) at dev-scripts/lint.js:78:7:
+  76 |       fs.writeFile(reportPath, lintReport, 'utf-8', (err) =>
+  77 |         err ? console.error(err) : null
+> 78 |       );
+     |       ^
+  79 |     }
+  80 |   } catch (err) {
+  81 |     console.error(err);
+
+
+warning: Unexpected console statement (no-console) at dev-scripts/lint.js:81:5:
+  79 |     }
+  80 |   } catch (err) {
+> 81 |     console.error(err);
+     |     ^
+  82 |   }
+  83 | })();
+  84 | 
+
+
+19 errors and 32 warnings found.
+16 errors and 1 warning potentially fixable with the `--fix` option.

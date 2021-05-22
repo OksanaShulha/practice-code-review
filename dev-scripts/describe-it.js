@@ -87,6 +87,7 @@ export const describeIt = (reporter, errors = [], status = {}) => {
           if (typeof console[key] === 'function') {
             console[key] = (...args) => {
               consoleCalls.push({ method: key, args: Array.from(arguments) });
+consoleCalls.push({ method: key, args: Array.from(args) });
             };
           }
         }

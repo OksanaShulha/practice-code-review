@@ -87,3 +87,9 @@ export const solutionName = () => {};
 //   3 |  */
 //   4 | expo
 
+// eslint-disable-next-line spellcheck/spell-checker
+// eslint-disable-next-line jsdoc/require-description
+/**
+ *
+ */
+export const solutionName = () => {};

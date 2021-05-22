@@ -1,0 +1,24 @@
+Thu May 20 2021, 20:12:06
+
+moveZeros at the end of the array of numbers
+  sorts positive numbers
+    √ PASS: whole numbers
+    √ PASS: decimal numbers
+    √ PASS: mixed whole and decimal numbers
+  sorts negative numbers
+    √ PASS: whole numbers
+    √ PASS: decimal numbers
+    √ PASS: mixed whole and decimal numbers
+  sorts mixed positive and negative numbers
+    √ PASS: whole numbers
+    √ PASS: decimal numbers
+    √ PASS: mixed whole and decimal numbers
+  sorts between strings elements
+    √ PASS: short strings
+    √ PASS: longer strings
+  sorts zeros between boolean elements
+    √ PASS: with logical operators
+  has no side-effects
+    √ PASS: returns a new array
+    √ PASS: does not modify the argument
+
